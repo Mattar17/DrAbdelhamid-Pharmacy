@@ -23,12 +23,13 @@ nav {
   background-color: white;
   padding: 0px 80px;
   z-index: 9999;
+  overflow: hidden;
 }
 .logo{
     position: relative;
     top:60px;
-    width: 160px;
-    height:230px;
+    width: 190px;
+    height:250px;
 }
 
 nav ul {

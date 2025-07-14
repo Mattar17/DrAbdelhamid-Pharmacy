@@ -1,0 +1,100 @@
+:root{
+    --primary-color:#78B9B5;
+    --secondery-color:#0F828C;
+    --blue:#065084;
+    --dark-blue:#320A6B;
+}
+
+body {
+  margin: 0;
+  padding:0;
+  font-family: josefin, sans-serif;
+}
+
+/* Navbar */
+nav {
+  position: sticky;
+  top:0px;
+  width:100%;
+  height:90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 0px 80px;
+  z-index: 9999;
+}
+.logo{
+    position: relative;
+    top:60px;
+    width: 160px;
+    height:230px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  color: var(--secondery-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover{
+    background-color: var(--primary-color);
+    background-size: 40px 10px;
+    padding:10px;
+    border-radius: 20px;
+    color : white;
+}
+
+/* Sections */
+.section {
+  display: block;
+  padding: 60px 20px;
+  text-align: center;
+  background-color: #e6f2ff;
+  margin-bottom: 10px;
+  border-radius: 8px;
+}
+
+.landing {
+  background-color:#ffffff;
+  display: flex;
+  justify-content: space-evenly;
+  height:calc(100vh - 90px);
+}
+
+.landing .paragraph{
+    position: relative;
+    font-weight: 600;
+    font-size: 24px;
+    color:var(--secondery-color);
+}
+
+.landing h2{
+    font-size:60px;
+    margin-left:50px;
+}
+
+.pharmacy{
+    top: 53px;
+    left: 362px;
+}
+
+.landing p{
+    letter-spacing: 4px;
+    font-size: 30px;
+    left: auto;
+}
+
+.doctor-image{
+    width:100%;
+    height:100%;
+    margin-left:20px;
+}

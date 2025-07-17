@@ -4,6 +4,9 @@
     --blue:#065084;
     --dark-blue:#320A6B;
 }
+html{
+  scroll-behavior: smooth;
+}
 
 body {
   margin: 0;
@@ -23,7 +26,6 @@ nav {
   background-color: var(--secondery-color);
   /* padding: 0px 80px; */
   z-index: 9999;
-  overflow: hidden;
 }
 .logo{
     position: relative;
@@ -43,23 +45,23 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  padding:15px 20px;
 }
 
 nav ul li a:hover{
-    background-color: var(--primary-color);
-    background-size: 40px 10px;
-    padding:10px;
-    border-radius: 20px;
+    background-color: var(--dark-blue);
+    border-radius: 50px;
     color : white;
+    font-size:18px;
+    font-weight: 500;
 }
 
 /* Sections */
 .section {
-  display: block;
   text-align: center;
-  background-color: #e6f2ff;
-  margin-bottom: 10px;
+  height:calc(100vh - 90px);
+  margin-bottom: 90px;
+  transition: 2s ease;
 }
 
 .landing{
@@ -93,4 +95,71 @@ nav ul li a:hover{
   margin-top: 20px;
   letter-spacing: 6px;
 }
+
+#services img{
+  width:20%
+}
+
+#services .card{
+  box-shadow: 5px 3px 15px rgb(142, 171, 193);
+  border-radius: 15px;
+  margin-top:100px;
+}
+
+.card-text{
+  margin-top:20px;
+  color:var(--secondery-color);
+  font-weight: 800;
+}
+
+.card-text h1{
+  font-size:24px;
+  letter-spacing: 4px;
+}
+
+.card-text p{
+  margin-top: 10px;
+}
+
+#staff{
+  background-color: var(--blue);
+  padding: 50px 0px;
+  z-index:300;
+}
+
+
+.employee{
+  border-radius: 16px;
+  height: 100%;
+  padding: 10px;
+  margin: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;      
+  justify-content: center;  
+  text-align: center;
+  border-right: 1px solid #7e7d7d;
+  color:#FFCB61;
+}
+
+.emp--img img{
+  width:60px;
+  border-radius: 100px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.emp--name{
+  font-size:20px;
+  font-weight: 700;
+}
+
+.emp--role{
+  font-size:18px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+
+
 

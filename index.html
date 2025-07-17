@@ -14,10 +14,9 @@
 <body>
 
   <!-- Navbar -->
-<div >
-  <nav class="w-screen px-[28px] bg-opacity-30">
-    <img class="logo" src="./img/DrAbdelhamid_Logo.png" alt="Logo" />
-    <ul class="text-white mr-[20px]">
+  <nav class="">
+    <img class="pl-[30px] logo" src="./img/DrAbdelhamid_Logo.png" alt="Logo" />
+    <ul class="text-white pr-[30px]">
       <li><a href="#services">Services</a></li>
       <li><a href="#staff">Staff</a></li>
       <li><a href="#location">Location</a></li>
@@ -27,24 +26,102 @@
   </nav>
 
   <!-- Landing Section -->
-  <div class="section landing">
+  <div class="section w-full landing">
     <div class="blur-image"></div>
     <div class="paragraph">
-       <h1 class="lg:block text-[60px] sm:inline text-[30px] ml-[3px]">DR.AbdelHamed</h1>
-       <h1 class="lg:block text-[60px] sm:inline text-[30px] ml-[3px]">Samy</h1>
-       <h1 class="lg:block text-[60px] sm:inline text-[30px] ml-[3px]">Pharmacy</h1>
+       <h1 class="lg:block text-[60px] sm:inline text-[30px]">DR.AbdelHamed</h1>
+       <h1 class="lg:block text-[60px] sm:inline text-[30px]">Samy</h1>
+       <h1 class="lg:block text-[60px] sm:inline text-[30px]">Pharmacy</h1>
        <p  class="lg:block sm:inline text-[15px]">reliable, professional</p>
     </div>
   </div>
 
   <!-- Services Section -->
-  <div id="services" class="section">
-    <h1>Services</h1>
+  <div id="services" class="section bg-white w-full grid grid-cols-3 justify-between justify-items-center items-center">
+  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
+    <div class="mt-[30px] justify-items-center">
+      <img src="./img/bride.png" alt="bride">
+    </div>
+    <div class="card-text">
+      <h1>Bride Care</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
+    <div class="mt-[30px] justify-items-center">
+      <img src="./img/shampoo.png" alt="bride">
+    </div>
+    <div class="card-text">
+      <h1>Hair&Skin Care</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
+  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
+    <div class="mt-[30px] justify-items-center">
+      <img src="./img/baby.png" alt="bride">
+    </div>
+    <div class="card-text">
+      <h1>Baby Care</h1>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </div>
   </div>
 
   <!-- Staff Section -->
-  <div id="staff" class="section">
-    <h1>Staff</h1>
+  <div id="staff" class="section pb-[60px] justify-items-center">
+    <h1 class="text-center text-5xl text-white font-extrabold mt-[10px] p-[10px]">Pharmacy Staff</h1>
+    <div class="staff-contianer flex place-content-center mt-[30px] h-[70%] w-[95%]">
+      <div class="employee">
+        <div class="emp--img">
+          <img src="./img/blank-profile-picture.png" alt="">
+        </div>
+        <div class="emp--text">
+          <p class="emp--name">Dr.Abdelhamed Samy</p>         
+          <h1 class="emp--role">Owner</h1>
+          <p class="emp-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatibus!</p>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="emp--img">
+          <img src="./img/blank-profile-picture.png" alt="">
+        </div>
+        <div class="emp--text">
+          <p class="emp--name">Dr.Mohamed Ahmed</p>
+          <h1 class="emp--role">PharmD</h1>
+          <p class="emp-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatibus!</p>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="emp--img">
+          <img src="./img/blank-profile-picture.png" alt="">
+        </div>
+        <div class="emp--text">
+          <p class="emp--name">Mr.Ali</p>
+          <h1 class="emp--role">Employee</h1>
+          <p class="emp-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatibus!</p>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="emp--img">
+          <img src="./img/blank-profile-picture.png" alt="">
+        </div>
+        <div class="emp--text">
+          <p class="emp--name">Mr.Eslam</p>
+          <h1 class="emp--role">Employee</h1>
+          <p class="emp-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatibus!</p>
+        </div>
+      </div>
+      <div class="employee">
+        <div class="emp--img">
+          <img src="./img/blank-profile-picture.png" alt="">
+        </div>
+        <div class="emp--text">
+          <p class="emp--name">Mr.Hosny</p>
+          <h1 class="emp--role">Employee</h1>
+          <p class="emp-des">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi, voluptatibus!</p>
+        </div>
+      </div>
+    </div>
   </div>
 
   <!-- Location Section -->
@@ -56,6 +133,5 @@
   <div id="contact" class="section">
     <h1>Contact</h1>
   </div>
-</div>
 </body>
 </html>

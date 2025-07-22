@@ -119,14 +119,15 @@ nav ul li a:hover{
   left:50px;
   top:25%;
   color: white;
-  font-size: 60px;
   font-weight: bolder;
+  text-align: center;
 }
+
 
 .paragraph p{
   font-size: 35px;
   color: var(--secondery-color);
-  margin-top: 20px;
+  margin-top: 50px;
   letter-spacing: 6px;
 }
 
@@ -169,7 +170,7 @@ nav ul li a:hover{
 
 
 .employee{
-  width:300px;
+  width:160px;
   border-radius: 16px;
   min-height:323px;
   padding: 10px;

@@ -6,6 +6,7 @@
 }
 html{
   scroll-behavior: smooth;
+  scroll-padding-top: 90px;
 }
 
 body {
@@ -56,12 +57,45 @@ nav ul li a:hover{
     font-weight: 500;
 }
 
+.drop-down-list{
+  display:none;
+  position: absolute;
+  top:65px;
+  right:13px;
+  background-color: var(--secondery-color);
+  padding:20px 10px;
+  font-size:14px;
+  font-weight: 500;
+}
+.drop-down-list li{
+  margin-bottom:15px;
+}
+
+
 /* Sections */
 .section {
   text-align: center;
-  height:calc(100vh - 90px);
-  margin-bottom: 90px;
+  max-width:100%;
+  min-height:90vh;
   transition: 2s ease;
+  padding: 120px 0px;
+}
+
+@media only screen and (max-width:600px) {
+  body{
+    font-size:12px;
+  }
+  body h1{
+    font-size:14px;
+  }
+  .section{
+    max-width:600px;
+  }
+  .employee{
+    width:40px;
+  }
+
+  
 }
 
 .landing{
@@ -76,7 +110,7 @@ nav ul li a:hover{
 
 .blur-image{
   width:40%;
-  height: 110%;
+  height: 130%;
   background: url(./img/doctor-8264057_1280.jpg) no-repeat content-box;
   filter: blur(10px);
 }
@@ -84,7 +118,7 @@ nav ul li a:hover{
   position:absolute;
   left:50px;
   top:25%;
-  color: #faf8f8;
+  color: white;
   font-size: 60px;
   font-weight: bolder;
 }
@@ -103,7 +137,13 @@ nav ul li a:hover{
 #services .card{
   box-shadow: 5px 3px 15px rgb(142, 171, 193);
   border-radius: 15px;
-  margin-top:100px;
+  padding:40px 20px;
+  margin-bottom: 40px;
+}
+
+.card{
+  margin:auto 20px;
+  max-width:400px;
 }
 
 .card-text{
@@ -129,8 +169,9 @@ nav ul li a:hover{
 
 
 .employee{
+  width:300px;
   border-radius: 16px;
-  height: 100%;
+  min-height:323px;
   padding: 10px;
   margin: 30px 20px;
   display: flex;
@@ -158,6 +199,50 @@ nav ul li a:hover{
   font-size:18px;
   font-weight: 500;
   margin-bottom: 30px;
+}
+@media only screen and (max-width:600px)
+{
+  .emp--img img{
+  width:20px;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  align-self: center;
+}
+
+.emp--name{
+  font-size:15px;
+  font-weight: 500;
+}
+
+.emp--role{
+  font-size:14px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+}
+
+#contact{
+  background-color: var(--primary-color);
+}
+
+.contact-info{
+  text-align:start;
+}
+.contact-info div{
+  color:white;
+}
+.contact-info .arabic{
+  font-family: "IBM Plex Sans Arabic", sans-serif;
+}
+.contact-info h1{
+  font-size:30px;
+  font-weight: 700;
+}
+
+.contact-info p{
+  font-size:18px;
+  font-weight: 600;
+  margin-bottom: 20px;
 }
 
 

@@ -6,20 +6,37 @@
   <title>DR/Abdelhamid Pharmacy</title>
   <link rel="icon" href="./img/pharmacy-logo.png">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>   
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <script defer src="./app.js"></script>
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="">
     <img class="pl-[30px] logo" src="./img/DrAbdelhamid_Logo.png" alt="Logo" />
-    <ul class="text-white pr-[30px]">
+    <div><i class="btn-drop-down block sm:hidden mr-[60px] text-xl text-white fa-solid fa-bars"></i></div>
+    <div class="drop-down-list">
+      <div class="arrow absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full w-0 h-0 
+              border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-black-500"></div>
+      <ul class="text-white block">
       <li><a href="#services">Services</a></li>
       <li><a href="#staff">Staff</a></li>
-      <li><a href="#location">Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    </div>
+    <ul class="hidden sm:flex text-white pr-[30px]">
+      <li><a href="#services">Services</a></li>
+      <li><a href="#staff">Staff</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
     
@@ -27,7 +44,7 @@
 
   <!-- Landing Section -->
   <div class="section w-full landing">
-    <div class="blur-image"></div>
+    <div class="sm:block hidden blur-image"></div>
     <div class="paragraph">
        <h1 class="lg:block text-[60px] sm:inline text-[30px]">DR.AbdelHamed</h1>
        <h1 class="lg:block text-[60px] sm:inline text-[30px]">Samy</h1>
@@ -37,9 +54,9 @@
   </div>
 
   <!-- Services Section -->
-  <div id="services" class="section bg-white w-full grid grid-cols-3 justify-between justify-items-center items-center">
-  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
-    <div class="mt-[30px] justify-items-center">
+  <div id="services" class="section bg-white sm:grid sm:grid-cols-1 lg:w-full lg:grid lg:grid-cols-3 justify-between justify-items-center items-center">
+  <div class="card bg-white">
+    <div class="justify-items-center">
       <img src="./img/bride.png" alt="bride">
     </div>
     <div class="card-text">
@@ -47,8 +64,8 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
-  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
-    <div class="mt-[30px] justify-items-center">
+  <div class="card bg-white">
+    <div class="justify-items-center">
       <img src="./img/shampoo.png" alt="bride">
     </div>
     <div class="card-text">
@@ -56,8 +73,8 @@
       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
     </div>
   </div>
-  <div class="card w-[70%] h-[50%] bg-white mt-[20px]">
-    <div class="mt-[30px] justify-items-center">
+  <div class="card bg-white">
+    <div class="justify-items-center">
       <img src="./img/baby.png" alt="bride">
     </div>
     <div class="card-text">
@@ -70,7 +87,7 @@
   <!-- Staff Section -->
   <div id="staff" class="section pb-[60px] justify-items-center">
     <h1 class="text-center text-5xl text-white font-extrabold mt-[10px] p-[10px]">Pharmacy Staff</h1>
-    <div class="staff-contianer flex place-content-center mt-[30px] h-[70%] w-[95%]">
+    <div class="staff-contianer flex flex-wrap justify-center gap-4 mt-[30px]">
       <div class="employee">
         <div class="emp--img">
           <img src="./img/blank-profile-picture.png" alt="">
@@ -124,14 +141,27 @@
     </div>
   </div>
 
-  <!-- Location Section -->
-  <div id="location" class="section">
-    <h1>Location</h1>
-  </div>
-
   <!-- Contact Section -->
-  <div id="contact" class="section">
-    <h1>Contact</h1>
+  <div id="contact" class="section sm:block lg:flex justify-items-center">
+    <div id="map" class="h-[400px] w-[640px] rounded-2xl">
+
+    </div>
+
+    <div class="contact-info">
+      <div>
+        <h1>Address:</h1>
+        <p>Al-akhmas - Sadat City - Menofia</p>
+      </div>
+      <div class="arabic">
+        <h1>:العنوان</h1>
+        <p>قرية الأخماس - مركز السادات - المنوفية</p>
+        <p>Mobile : +201098869622</p>
+        <p>Email : mohamed.esmail19121@fop.usc.edu.eg</p>
+      </div>
+    </div>
   </div>
+  <footer class="h-[60px] text-center text-white bg-black ">
+    <p class="pt-[10px]">All rights reserved &copy; 2025   Developer : Mohamed Salah Mattar</p>
+  </footer>
 </body>
 </html>

@@ -13,5 +13,5 @@ const dropDownBtn = document.querySelector('.btn-drop-down');
 const dropDownList = document.querySelector('.drop-down-list');
 
 dropDownBtn.addEventListener('click', () => {
-    dropDownList.classList.toggle('block');
+    dropDownList.style.display = dropDownList.style.display === 'block' ? 'none' : 'block';
 })

@@ -209,7 +209,7 @@ nav ul li a:hover{
 @media only screen and (max-width:600px)
 {
   .employee{
-    width:160px;
+    width:140px;
   }
   .emp--img img{
   width:20px;
@@ -240,6 +240,11 @@ nav ul li a:hover{
 
 .contact-info{
   text-align:start;
+}
+@media screen and (max-width:600px) {
+  .contact-info{
+    text-align: center;
+  }
 }
 .contact-info div{
   color:white;

@@ -41,6 +41,7 @@ nav ul {
   gap: 50px;
   margin: 0;
   padding: 0;
+  margin-right:30px;
 }
 
 nav ul li a {
@@ -68,14 +69,26 @@ nav ul li a:hover{
   margin-bottom:15px;
 }
 
-
+.language{
+  background-color:white;
+  padding:0px 10px;
+  width:fit-content;
+  border-radius: 15px;
+}
 /* Sections */
 .section {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 1s ease-out, transform 1s ease-out;
   text-align: center;
   max-width:100%;
   min-height:90vh;
   transition: 2s ease;
   padding: 120px 0px;
+}
+.section.visible {
+  opacity: 100;
+  transform: translateY(0);
 }
 
 @media screen and (max-width:600px) {
@@ -148,7 +161,7 @@ nav ul li a:hover{
 }
 
 .card{
-  margin:auto 20px;
+  margin:10px 20px;
   max-width:400px;
 }
 
@@ -262,6 +275,8 @@ nav ul li a:hover{
   font-weight: 600;
   margin-bottom: 20px;
 }
+
+
 
 
 

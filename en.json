@@ -1,0 +1,45 @@
+{
+    "links":{
+        "services":"Services",
+        "staff":"Staff",
+        "contact":"Contact"
+    },
+
+    "services":{
+        "bride":"Bride Care",
+        "hair":"Hair&Skin Care",
+        "baby":"Baby Care"
+    },
+      "staff": [
+    {
+      "name": "Dr.Abdelhamid Samy",
+      "role": "Owner",
+      "desc": "Pharmacist"
+    },
+    {
+      "name": "Dr.Mohamed Ahmed",
+      "role": "PharmD",
+      "desc":"Doctor of pharmacy Degree"
+    },
+    {
+      "name": "Mr.Ali",
+      "role": "Employees Manager",
+      "desc": "Pharmacy Technician"
+    },
+    {
+      "name": "Mr.Eslam",
+      "role":"Employee",
+      "desc": "Pharmacy Technician"
+    },
+    {
+       "name": "Mr.Hosny",
+      "role":"Employee",
+      "desc": "Pharmacy Technician"
+    },
+    {
+      "name": "Mr.Ahmed Atef",
+      "role":"Employee",
+      "desc": "Pharmacy Technician"
+    }
+  ]
+}

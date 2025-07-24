@@ -22,28 +22,29 @@
 <body>
 
   <!-- Navbar -->
-  <nav class="">
+  <nav class="" dir="ltr">
     <img class="pl-[30px] logo" src="./img/DrAbdelhamid_Logo.png" alt="Logo" />
     <div class="block md:hidden"><i class="btn-drop-down mr-[60px] text-xl text-white fa-solid fa-bars"></i></div>
     <div class="drop-down-list">
       <div class="arrow absolute top-0 left-1/2 -translate-x-1/2 -translate-y-full w-0 h-0 
               border-l-8 border-r-8 border-b-8 border-l-transparent border-r-transparent border-b-black-500"></div>
       <ul class="text-white block">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#staff">Staff</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a class="list-services" href="#services">Services</a></li>
+      <li><a class="list-staff" href="#staff">Staff</a></li>
+      <li><a class="list-contact" href="#contact">Contact</a></li>
     </ul>
     </div>
     <ul class="hidden sm:flex text-white pr-[30px]">
-      <li><a href="#services">Services</a></li>
-      <li><a href="#staff">Staff</a></li>
-      <li><a href="#contact">Contact</a></li>
+      <li><a class="list-services" href="#services">Services</a></li>
+      <li><a class="list-staff" href="#staff">Staff</a></li>
+      <li><a class="list-contact" href="#contact">Contact</a></li>
+      <li><button data-lang = "ar" class="language w-[65px] rounded-3xl text-black">العربية</button></li>
     </ul>
     
   </nav>
 
   <!-- Landing Section -->
-  <div class="section w-full landing">
+  <div class="section w-full landing" dir="ltr">
     <div class="sm:block hidden blur-image"></div>
     <div class="paragraph h-[50%]">
        <h1 class="md:block lg:text-[60px] inline text-[45px]">DR.AbdelHamed</h1>
@@ -60,7 +61,7 @@
       <img src="./img/bride.png" alt="bride">
     </div>
     <div class="card-text">
-      <h1>Bride Care</h1>
+      <h1 class="card--bride">Bride Care</h1>
     </div>
   </div>
   <div class="card bg-white">
@@ -68,7 +69,7 @@
       <img src="./img/shampoo.png" alt="bride">
     </div>
     <div class="card-text">
-      <h1>Hair&Skin Care</h1>
+      <h1 class="card--hair">Hair&Skin Care</h1>
     </div>
   </div>
   <div class="card bg-white">
@@ -76,7 +77,7 @@
       <img src="./img/baby.png" alt="bride">
     </div>
     <div class="card-text">
-      <h1>Baby Care</h1>
+      <h1 class="card--baby">Baby Care</h1>
     </div>
   </div>
   </div>

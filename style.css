@@ -74,6 +74,7 @@ nav ul li a:hover{
   padding:0px 10px;
   width:fit-content;
   border-radius: 15px;
+  margin-left:280px;
 }
 /* Sections */
 .section {
@@ -97,6 +98,11 @@ nav ul li a:hover{
   }
   body h1{
     font-size:14px;
+  }
+  .language{
+    margin-left: 0px;
+    color:rgb(54, 54, 54);
+    font-weight: 600;
   }
   .section{
     max-width:600px;
